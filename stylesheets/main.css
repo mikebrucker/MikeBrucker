@@ -1,10 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #333333;
     text-align: center;
     color: #EEEEEE;
+    font-size: 0;
+}
+
+h1 {
     font-size: 50px;
 }
 
-p {
+h1, p, a {
     margin-bottom: 20px;
+}
+
+p, a, span {
+    font-size: 24px;
+}
+
+a {
+    background: #222222;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid purple;
+    color: #00FF2D;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 4px solid #00FF2D;
+    color: purple;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
 }
