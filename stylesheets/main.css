@@ -38,11 +38,18 @@ a {
     background: #222222;
     border: 4px solid purple;
     border-radius: 20px;
+    box-shadow: 0 0 30px #00FF2D;
 }
 
 a:hover {
     border: 4px solid #00FF2D;
     color: purple;
+}
+
+a:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
 
 img {
@@ -64,13 +71,13 @@ footer {
     margin: 0 auto;
     width: 720px;
     color: #222222;
-    background: #EEEEEE;
-    padding: 6px;
+    background: linear-gradient(purple, 48px, #EEEEEE, 48px, #EEEEEE);
     border: 4px solid purple;
     border-radius: 20px;
 }
 .skills > p {
     font-size: 36px;
+    color: #00FF2D;
 }
 
 svg, .techIcon {
