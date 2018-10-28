@@ -12,6 +12,7 @@ body {
 
 main {
     background: #333333;
+    background: #333333 no-repeat top/100% url("../images/philadelphia-1920.jpg");
     padding-bottom: 20px;
 }
 
