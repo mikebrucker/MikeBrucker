@@ -7,25 +7,31 @@ body {
     color: #EEEEEE;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0;
-    background: #111111;
+    background: #222222;
 }
 
 main {
     background: #333333;
-    background: #333333 no-repeat top/100% url("../images/philadelphia-1920.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-image: linear-gradient(rgba(51, 51, 51, 0), rgba(51, 51, 51, 0.3), 70%, #333333), url("../images/philadelphia-1920.jpg");
     padding-bottom: 20px;
 }
 
 h1 {
     font-size: 50px;
-    padding: 20px 0;
 }
 
-p {
-    padding: 6px 0;
+h1, h2 {
+    padding: 10px 0;
 }
 
-p, .gameLink {
+h2 {
+    font-size: 40px;
+}
+
+.gameLink {
     font-size: 24px;
 }
 
@@ -48,7 +54,7 @@ p, .gameLink {
     left: 2px;
 }
 
-img, .skills {
+img {
     margin: 0 auto;
 }
 
@@ -56,45 +62,100 @@ img, footer {
     display: block;
 }
 
-.gameLink, svg, .techIcon {
+.gameLink, svg, .techIcon, #navTitle {
     display: inline-block;
 }
 
 footer {
     padding: 30px 0;
-    font-size: 20px;
-    color: #999999;
 }
 
-.gameLink, .skills {
+footer {
+    font-size: 20px;
+}
+
+.gameLink, .infoTitle {
     color: #00FF2D;
+}
+
+.gameLink, .infoBox {
     box-shadow: 0 0 30px #00FF2D;
     border: 4px solid purple;
     border-radius: 20px;
 }
 
-.skills {
+.infoBox {
+    margin: 20px auto;
     width: 720px;
     background: linear-gradient(purple, 48px, #EEEEEE, 48px, #EEEEEE);
 }
-.skills > p {
+
+.infoTitle {
     font-size: 36px;
+    padding: 6px 0;
 }
 
-svg, .techIcon {
+.infoContent {
+    font-size: 16px;
+    margin: 10px;
+    text-align: left;
+    color: #111111;
+}
+
+.techIcon {
     margin: 5px;
     width: 100px;
     height: 100px;
 }
 
+nav {
+    padding: 10px 0;
+    text-align: left;
+}
+
+#navTitle {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+nav > a > svg {
+    float: right;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+}
+
+nav > a:hover > svg > g {
+    fill: purple;
+}
 
 @media all and (min-width: 513px) and (max-width: 756px) {
-    .skills {
+    .infoBox {
         width: 480px;
     }
 }
 @media all and (max-width: 512px) {
-    .skills {
+    .infoBox {
         width: 98%;
+    }
+    
+    nav {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 361px) and (max-width: 512px) {
+    #navTitle {
+        text-align: center;
+        font-size: 22px;
+        padding: 15px 0;
+    }
+}
+
+
+@media all and (max-width: 360px) {
+    #navTitle {
+        font-size: 18px;
+        padding: 15px 0;
     }
 }
