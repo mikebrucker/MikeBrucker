@@ -139,6 +139,13 @@ nav {
     font-size: 50px;
 }
 
+.navAnchor {
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 0 5px;
+    float: right;
+}
+
 .navLink {
     color: #EEEEEE;
     transform: color;
@@ -183,19 +190,33 @@ footer > .footerLink:hover > svg > g {
     transition: 0.25s;
 }
 
+.anchor {
+    position: relative;
+    top: -80px;
+}
+
 @media all and (max-width: 640px) {
     main {
         background-image: url("../images/philadelphia-640.jpg");
     }
+}
 
+@media all and (max-width: 756px) {
     #menu {
         display: inline;
+    }
+
+    .navAnchor {
+        font-size: 30px;
+        float: none;
+        text-align: right;
+        display: block;      
     }
 
     .navHide {
         display: none;
     }
-
+    
     .navText {
         display: block;
         font-size: 30px;

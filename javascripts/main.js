@@ -22,10 +22,16 @@ menu.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
     hideMenu();
-})
+});
+
+for (let nav of navHide) {
+    nav.addEventListener('click', () => {
+        hideMenuOnClick();
+    });
+}
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 640) {
+    if (window.innerWidth > 756) {
         menuHidden = true;
     } else {
         menuHidden = false;
@@ -48,7 +54,11 @@ const mainHeightChange = () => {
 const hideMenu = () => {
     if (menuHidden) {
         for (let navItem of navHide) {
-            navItem.style.display = "inline";
+            if (window.innerWidth < 757) {
+                navItem.style.display = "block";
+            } else {
+                navItem.style.display = "inline";
+            }
             overlay.style.display = "block";
         }
     } else {
@@ -58,6 +68,12 @@ const hideMenu = () => {
         }
     }
     menuHidden = !menuHidden;
+}
+
+const hideMenuOnClick = () => {
+    if (window.innerWidth < 757) {
+        hideMenu();
+    }
 }
 
 mainHeightChange();
