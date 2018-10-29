@@ -11,12 +11,25 @@ body {
 }
 
 main {
-    background: #333333;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: center;
     background-position: top;
-    background-image: linear-gradient(rgba(51, 51, 51, 0), rgba(51, 51, 51, 0.3), 70%, #333333), url("../images/philadelphia-1920.jpg");
-    padding-bottom: 20px;
+    background-image: url("../images/philadelphia-1920.jpg");
+    padding: 70px 0 0;
+    height: 514px;
+}
+
+article {
+    background: darkorange;
+    padding: 10px 0;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
 }
 
 h1 {
@@ -35,11 +48,14 @@ h2 {
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .gameLink {
     width: 266px;
     margin: 10px;
     padding: 10px;
-    text-decoration: none;
     background: #222222;
 }
 
@@ -66,12 +82,8 @@ img, footer {
     display: inline-block;
 }
 
-footer {
-    padding: 30px 0;
-}
-
-footer {
-    font-size: 20px;
+#menu, .navText {
+    display: none;
 }
 
 .gameLink, .infoTitle {
@@ -85,7 +97,7 @@ footer {
 }
 
 .infoBox {
-    margin: 20px auto;
+    margin: 100px auto;
     width: 720px;
     background: linear-gradient(purple, 48px, #EEEEEE, 48px, #EEEEEE);
 }
@@ -96,8 +108,9 @@ footer {
 }
 
 .infoContent {
-    font-size: 16px;
-    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px;
     text-align: left;
     color: #111111;
 }
@@ -109,8 +122,16 @@ footer {
 }
 
 nav {
+    z-index: 2;
     padding: 10px 0;
-    text-align: left;
+    text-align: center;
+    position: fixed;
+    background: rgba(34, 34, 34, 0.5);
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: background;
+    transition: 0.5s;
 }
 
 #navTitle {
@@ -118,15 +139,98 @@ nav {
     font-size: 50px;
 }
 
-nav > a > svg {
+.navLink {
+    color: #EEEEEE;
+    transform: color;
+}
+
+.navLink:hover {
+    color: purple;
+    transition: 0.25s;
+}
+
+nav svg {
     float: right;
     margin: 0 5px;
     width: 50px;
     height: 50px;
+    transform: fill;
 }
 
-nav > a:hover > svg > g {
+nav > .navLink:hover > svg > g {
     fill: purple;
+    transition: 0.25s;
+}
+
+footer {
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+footer a {
+    font-size: 0;
+}
+
+footer svg {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    transform: fill;
+}
+
+footer > .footerLink:hover > svg > g {
+    fill: purple;
+    transition: 0.25s;
+}
+
+@media all and (max-width: 640px) {
+    main {
+        background-image: url("../images/philadelphia-640.jpg");
+    }
+
+    #menu {
+        display: inline;
+    }
+
+    .navHide {
+        display: none;
+    }
+
+    .navText {
+        display: block;
+        font-size: 30px;
+        padding: 15px 0;
+        margin-right: 70px;
+        text-align: right;
+    }
+
+    nav > .navHide > svg {
+        margin: 5px;
+        float: right;
+        clear: both;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 1280px) {
+    main {
+        background-image: url("../images/philadelphia-1280.jpg");
+        height: 1029px;
+    }
+
+    nav {
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 1281px) {
+    main {
+        background-image: url("../images/philadelphia-1920.jpg");
+        background-size: 100%;
+    }
+    
+    nav {
+        text-align: left;
+    }
 }
 
 @media all and (min-width: 513px) and (max-width: 756px) {
@@ -134,28 +238,14 @@ nav > a:hover > svg > g {
         width: 480px;
     }
 }
+
 @media all and (max-width: 512px) {
     .infoBox {
         width: 98%;
     }
     
-    nav {
-        text-align: center;
-    }
-}
-
-@media all and (min-width: 361px) and (max-width: 512px) {
     #navTitle {
-        text-align: center;
-        font-size: 22px;
-        padding: 15px 0;
-    }
-}
-
-
-@media all and (max-width: 360px) {
-    #navTitle {
-        font-size: 18px;
-        padding: 15px 0;
+        font-size: 36px;
+        padding: 7px 0;
     }
 }
