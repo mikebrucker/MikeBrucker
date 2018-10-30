@@ -139,7 +139,7 @@ img, footer, .block {
 nav {
     z-index: 2;
     padding: 10px 0 0;
-    text-align: center;
+    text-align: left;
     position: fixed;
     background: rgba(34, 34, 34, 0.5);
     width: 100%;
@@ -250,16 +250,16 @@ footer > .footerLink:hover > svg > g {
     .projectImage {
         width: 100%;
     }
+
+    nav {
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 641px) and (max-width: 1280px) {
     main {
         background-image: url("../images/philadelphia-1280.jpg");
         height: 1029px;
-    }
-
-    nav {
-        text-align: left;
     }
 }
 
@@ -268,16 +268,12 @@ footer > .footerLink:hover > svg > g {
         background-image: url("../images/philadelphia-1920.jpg");
         background-size: 100%;
     }
-    
-    nav {
-        text-align: left;
-    }
 }
 
 @media all and (max-width: 512px) {
     #navTitle {
         font-size: 36px;
-        padding: 12px 0;
+        padding: 7px 0 17px;
     }
 }
 
