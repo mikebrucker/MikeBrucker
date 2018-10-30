@@ -88,8 +88,11 @@ const hideMenuOnClick = () => {
 
 //jquery to make links to anchors scroll
 const scrollToAnchor = anchor => {
-    $('html, body').animate({
-        scrollTop: ($(anchor).offset().top)
+    $('html').animate({
+        scrollTop: $(anchor).offset().top
+    },500);
+    $('body').animate({
+        scrollTop: $(anchor).offset().top
     },500);
 }
 
