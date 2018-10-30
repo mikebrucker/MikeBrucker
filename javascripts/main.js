@@ -39,7 +39,7 @@ for (let nav of navHide) {
 for (let img of images) {
     img.addEventListener('click', () => {
         window.open(img.getAttribute('src', 'Image',));
-    })
+    });
 }
 
 const navTransparent = () => {
@@ -47,7 +47,11 @@ const navTransparent = () => {
         nav.style.backgroundColor = "#222222";
     } 
     else {
-        nav.style.backgroundColor = "rgba(34, 34, 34, 0.4)";
+        if (menuHidden) {
+            nav.style.backgroundColor = "rgba(34, 34, 34, 0.4)";
+        } else {
+            nav.style.backgroundColor = "rgba(34, 34, 34, 0.9)";
+        }
     }    
 }
 
@@ -78,6 +82,7 @@ const hideMenu = () => {
         }
     }
     menuHidden = !menuHidden;
+    navTransparent();
 }
 
 const hideMenuOnClick = () => {
