@@ -14,13 +14,13 @@ main {
     background-repeat: no-repeat;
     background-size: center;
     background-position: top;
-    background-image: url("../images/philadelphia-1920.jpg");
+    background-image: url("../images/philadelphia-640.jpg");
     padding: 70px 0 0;
     height: 514px;
 }
 
 article {
-    background: darkorange;
+    background: linear-gradient(black 10px, #555555 20px);
     padding: 10px 0;
 }
 
@@ -34,51 +34,47 @@ article {
 
 h1 {
     font-size: 50px;
-}
-
-h1, h2 {
     padding: 10px 0;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-.gameLink {
-    font-size: 24px;
 }
 
 a {
     text-decoration: none;
 }
 
-.gameLink {
-    width: 266px;
+.link {
+    font-size: 24px;
     margin: 10px;
     padding: 10px;
     background: #222222;
 }
 
-.gameLink:hover {
-    border: 4px solid #00FF2D;
-    color: purple;
+.link:hover {
+    background: purple;
 }
 
-.gameLink:active {
+.link:active {
     position: relative;
     top: 2px;
     left: 2px;
+}
+
+img, .navLink, #navTitle, #footerTitle {
+    cursor: pointer;
 }
 
 img {
     margin: 0 auto;
 }
 
-img, footer {
+img, footer, .block {
     display: block;
 }
 
-.gameLink, svg, .techIcon, #navTitle {
+.block {
+    height: 20px;
+}
+
+.link, svg, .techIcon, #navTitle {
     display: inline-block;
 }
 
@@ -86,33 +82,44 @@ img, footer {
     display: none;
 }
 
-.gameLink, .infoTitle {
+.link, .infoTitle {
     color: #00FF2D;
 }
 
-.gameLink, .infoBox {
+.link, .infoBox {
+    border-radius: 30px;
     box-shadow: 0 0 30px #00FF2D;
     border: 4px solid purple;
-    border-radius: 20px;
 }
 
 .infoBox {
     margin: 100px auto;
-    width: 720px;
-    background: linear-gradient(purple, 48px, #EEEEEE, 48px, #EEEEEE);
+    width: 736px;
+    background: linear-gradient(purple 48px, #EEEEEE 48px);
+    padding: 0 30px 10px;
 }
 
 .infoTitle {
     font-size: 36px;
     padding: 6px 0;
+    margin-bottom: 10px;
 }
 
 .infoContent {
     font-size: 20px;
     line-height: 30px;
-    margin: 20px;
     text-align: left;
     color: #111111;
+}
+
+.projectTitle {
+    font-size: 30px;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.projectImage {
+    width: 80%;
 }
 
 .techIcon {
@@ -146,12 +153,12 @@ nav {
     float: right;
 }
 
-.navLink {
+.navLink, #navTitle, #footerTitle {
     color: #EEEEEE;
     transform: color;
 }
 
-.navLink:hover {
+.navLink:hover, #navTitle:hover, #footerTitle:hover {
     color: purple;
     transition: 0.25s;
 }
@@ -195,12 +202,6 @@ footer > .footerLink:hover > svg > g {
     top: -80px;
 }
 
-@media all and (max-width: 640px) {
-    main {
-        background-image: url("../images/philadelphia-640.jpg");
-    }
-}
-
 @media all and (max-width: 756px) {
     #menu {
         display: inline;
@@ -230,6 +231,14 @@ footer > .footerLink:hover > svg > g {
         float: right;
         clear: both;
     }
+
+    .infoBox {
+        width: 98%;
+    }
+
+    .projectImage {
+        width: 100%;
+    }
 }
 
 @media all and (min-width: 641px) and (max-width: 1280px) {
@@ -254,16 +263,7 @@ footer > .footerLink:hover > svg > g {
     }
 }
 
-@media all and (min-width: 513px) and (max-width: 756px) {
-    .infoBox {
-        width: 480px;
-    }
-}
-
 @media all and (max-width: 512px) {
-    .infoBox {
-        width: 98%;
-    }
     
     #navTitle {
         font-size: 36px;

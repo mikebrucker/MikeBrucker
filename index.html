@@ -32,7 +32,7 @@
 
 <body>
     <nav id="nav">
-		<div id="navTitle">Mike Brucker</div>
+		<div id="navTitle" onclick="scrollToAnchor('main')">Mike Brucker</div>
 		<div class="navLink" id="menu">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.737 476.737" style="enable-background:new 0 0 476.737 476.737;" xml:space="preserve"><g fill="#EEEEEE"><path d="M444.955,0H31.782C14.239,0,0,14.239,0,31.782v413.172c0,17.544,14.239,31.782,31.782,31.782h413.172c17.544,0,31.782-14.239,31.782-31.782V31.782C476.737,14.239,462.499,0,444.955,0z M365.499,349.607h-254.26c-8.772,0-15.891-7.151-15.891-15.891c0-8.74,7.119-15.891,15.891-15.891h254.26c8.74,0,15.891,7.151,15.891,15.891C381.39,342.456,374.239,349.607,365.499,349.607z M365.499,254.26h-254.26c-8.772,0-15.891-7.151-15.891-15.891c0-8.772,7.119-15.891,15.891-15.891h254.26c8.74,0,15.891,7.119,15.891,15.891C381.39,247.109,374.239,254.26,365.499,254.26zM365.499,158.912h-254.26c-8.772,0-15.891-7.119-15.891-15.891c0-8.772,7.119-15.891,15.891-15.891h254.26c8.74,0,15.891,7.119,15.891,15.891C381.39,151.793,374.239,158.912,365.499,158.912z"/></g></svg>
 		</div>
@@ -48,14 +48,14 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"><metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata><g fill="#EEEEEE"><path d="M989.9,282c-0.2-15.6-0.3-22-0.4-29.4c-0.4-22-1.8-44.2-5.6-64.1c-4.1-21.6-9.6-41.3-19.6-61.1c-10.1-20-24-37.2-39-52.6c-15.4-15-32.7-28.9-52.6-39c-19.7-10-39.3-15.5-61.1-19.6c-19.9-3.7-42.1-5.2-64.1-5.6c-7.4-0.1-13.8-0.2-29.4-0.4C703.1,10.1,691,10,682,10c-45.6,0-318.3,0-364,0c-9,0-21.2,0.1-36,0.2c-15.6,0.2-22,0.3-29.4,0.4c-22,0.4-44.2,1.8-64.1,5.6c-21.6,4.1-41.3,9.6-61.1,19.6c-20,10.1-37.2,24-52.6,39c-15,15.4-28.9,32.7-39,52.6c-10,19.7-15.5,39.3-19.6,61.1c-3.7,19.9-5.2,42.1-5.6,64.1c-0.1,7.4-0.2,13.8-0.4,29.4c-0.1,14.9-0.2,27.1-0.2,36.1v364c0,9,0.1,21.2,0.2,36c0.2,15.6,0.3,22,0.4,29.4c0.4,22,1.8,44.2,5.6,64.1c4.1,21.6,9.6,41.3,19.6,61.1c10.1,20,24,37.2,39,52.6c15.4,15,32.7,28.9,52.6,39c19.7,10,39.3,15.5,61.1,19.6c19.9,3.7,42.1,5.2,64.1,5.6c7.4,0.1,13.8,0.2,29.4,0.4c14.8,0.1,27,0.2,36,0.2c45.6,0,318.3,0,364,0c9,0,21.2-0.1,36-0.2c15.6-0.2,22-0.3,29.4-0.4c22-0.4,44.2-1.8,64.1-5.6c21.6-4.1,41.3-9.6,61.1-19.6c20-10.1,37.2-24,52.6-39c15-15.4,28.9-32.7,39-52.6c10-19.7,15.5-39.3,19.6-61.1c3.7-19.9,5.2-42.1,5.6-64.1c0.1-7.4,0.2-13.8,0.4-29.4c0.1-14.8,0.2-27,0.2-36v-364C990.1,309.1,990,296.9,989.9,282z M816.3,291.7L562.4,545.6c-17.4,17.4-40.3,26.1-63.2,26.1c-22.9,0-45.7-8.7-63.2-26.1L182.3,291.7H816.3z M173.7,313.9l187.1,187.1L173.7,688.3V313.9z M184.5,708.3l191.8-191.8l44.4,44.4c21,21,48.9,32.5,78.6,32.5s57.6-11.6,78.6-32.5l45.2-45.2l192.6,192.6H184.5z M826.4,688.3l-188-188l188-187.9V688.3z"/></g></svg>
 			<div class="navText">Email</div>
 		</a>
-		<a href="#about" class="navLink navAnchor navHide">About Me</a>
-		<a href="#skills" class="navLink navAnchor navHide">Skills</a>
-		<a href="#projects" class="navLink navAnchor navHide">Projects</a>
+		<a onclick="scrollToAnchor('#projects')" class="navLink navAnchor navHide">Projects</a>
+		<a onclick="scrollToAnchor('#skills')" class="navLink navAnchor navHide">Skills</a>
+		<a onclick="scrollToAnchor('#about')" class="navLink navAnchor navHide">About Me</a>
 	</nav>
 	<div id="overlay"></div>
 
     <main>
-        <h1>Portfolio Coming Soon!</h1>
+        <h1>Portfolio Under Construction!</h1>
         
 		
 		<img src="images/favicon/favicon-310.png" />
@@ -63,20 +63,15 @@
 	
 	
 	<article>
-		<h2>Play my games</h2>
-		<a class="gameLink" href="https://mwb-tower-defense.herokuapp.com" target="_blank">Tower Defense</a>
-		<a class="gameLink" href="https://blob-man.herokuapp.com/" target="_blank">Blob-Man</a>
-		<a class="gameLink" href="https://mikebrucker.github.io/Wheel-Of-Fortune/" target="_blank">Wheel of JavaScript</a>
-		
-		<a class="gameLink" href="assets/mike_brucker_resume.pdf" target="_blank">Resume</a>
-		
 		<div class="infoBox">
 			<div class="anchor" id="about"></div>
 			<p class="infoTitle">About Me</p>
 			<p class="infoContent">
 				I acquired over 480 hours of coding knowledge in less than 3 months. I now have a firm grasp of Front-End Web Development, particularly JavaScript, and am strong on Back-End Development using Ruby on Rails as the framework for many projects. I continue to expand my knowledge on all things coding. In my free time I play hockey, PlayStation4, and travel when I can.
 			</p>
+			<a class="link" href="assets/mike_brucker_resume.pdf" target="_blank">Resume</a>
 		</div>
+
 		<div class="infoBox">
 			<div class="anchor" id="skills"></div>
 			<p class="infoTitle">Skills</p>
@@ -107,13 +102,36 @@
 		</div>
 
 		<div class="infoBox">
-				<div class="anchor" id="projects"></div>
+			<div class="anchor" id="projects"></div>
 			<p class="infoTitle">Projects</p>
+			
+			<p class="projectTitle">Tower Defense</p>
+			<a class="link" href="https://mwb-tower-defense.herokuapp.com" target="_blank">Play</a>
+			<a class="link" href="https://github.com/mikebrucker/Tower-Defense" target="_blank">GitHub Repo</a>
+			<p class="infoContent">About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda About my tower Defense game yadda yadda yadda </p>
+			<img class="projectImage" src="images/tower-defense.png" />
+			
+			<div class="block"></div>
+			
+			<p class="projectTitle">Blob-Man</p>
+			<a class="link" href="https://blob-man.herokuapp.com" target="_blank">Play</a>
+			<a class="link" href="https://github.com/mikebrucker/Blob-Man" target="_blank">GitHub Repo</a>
+			<p class="infoContent">Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man Blob-Man is the man </p>
+			<img class="projectImage" src="images/blob-man.png" />
+			
+			<div class="block"></div>
+			
+			<p class="projectTitle">Wheel of JavaScript</p>
+			<a class="link" href="http://mikebrucker.com/Wheel-Of-Fortune/" target="_blank">Play</a>
+			<a class="link" href="https://github.com/mikebrucker/Wheel-Of-Fortune" target="_blank">GitHub Repo</a>
+			<p class="infoContent">Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... Try your luck at the Wheel... of... JavaScriiiiiiipt... </p>
+			<img class="projectImage" src="images/wheel-of-javascript.png" />
+
 		</div>
 	</article>
 		
 	<footer>
-		<p>
+		<p id="footerTitle" onclick="scrollToAnchor('main')">
 			&copy; Mike Brucker 2018
 		</p>
 		<a class="footerLink" href="https://github.com/mikebrucker" target="_blank">
@@ -126,7 +144,8 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"><metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata><g fill="#EEEEEE"><path d="M989.9,282c-0.2-15.6-0.3-22-0.4-29.4c-0.4-22-1.8-44.2-5.6-64.1c-4.1-21.6-9.6-41.3-19.6-61.1c-10.1-20-24-37.2-39-52.6c-15.4-15-32.7-28.9-52.6-39c-19.7-10-39.3-15.5-61.1-19.6c-19.9-3.7-42.1-5.2-64.1-5.6c-7.4-0.1-13.8-0.2-29.4-0.4C703.1,10.1,691,10,682,10c-45.6,0-318.3,0-364,0c-9,0-21.2,0.1-36,0.2c-15.6,0.2-22,0.3-29.4,0.4c-22,0.4-44.2,1.8-64.1,5.6c-21.6,4.1-41.3,9.6-61.1,19.6c-20,10.1-37.2,24-52.6,39c-15,15.4-28.9,32.7-39,52.6c-10,19.7-15.5,39.3-19.6,61.1c-3.7,19.9-5.2,42.1-5.6,64.1c-0.1,7.4-0.2,13.8-0.4,29.4c-0.1,14.9-0.2,27.1-0.2,36.1v364c0,9,0.1,21.2,0.2,36c0.2,15.6,0.3,22,0.4,29.4c0.4,22,1.8,44.2,5.6,64.1c4.1,21.6,9.6,41.3,19.6,61.1c10.1,20,24,37.2,39,52.6c15.4,15,32.7,28.9,52.6,39c19.7,10,39.3,15.5,61.1,19.6c19.9,3.7,42.1,5.2,64.1,5.6c7.4,0.1,13.8,0.2,29.4,0.4c14.8,0.1,27,0.2,36,0.2c45.6,0,318.3,0,364,0c9,0,21.2-0.1,36-0.2c15.6-0.2,22-0.3,29.4-0.4c22-0.4,44.2-1.8,64.1-5.6c21.6-4.1,41.3-9.6,61.1-19.6c20-10.1,37.2-24,52.6-39c15-15.4,28.9-32.7,39-52.6c10-19.7,15.5-39.3,19.6-61.1c3.7-19.9,5.2-42.1,5.6-64.1c0.1-7.4,0.2-13.8,0.4-29.4c0.1-14.8,0.2-27,0.2-36v-364C990.1,309.1,990,296.9,989.9,282z M816.3,291.7L562.4,545.6c-17.4,17.4-40.3,26.1-63.2,26.1c-22.9,0-45.7-8.7-63.2-26.1L182.3,291.7H816.3z M173.7,313.9l187.1,187.1L173.7,688.3V313.9z M184.5,708.3l191.8-191.8l44.4,44.4c21,21,48.9,32.5,78.6,32.5s57.6-11.6,78.6-32.5l45.2-45.2l192.6,192.6H184.5z M826.4,688.3l-188-188l188-187.9V688.3z"/></g></svg>
 		</a>
 	</footer>
-    
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="javascripts/main.js"></script>
 </body>
 
