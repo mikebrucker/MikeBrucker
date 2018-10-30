@@ -99,6 +99,10 @@ img, footer, .block {
     padding: 0 30px 10px;
 }
 
+.infoBox:nth-of-type(2) {
+    padding: 0 0 10px;
+}
+
 .infoTitle {
     font-size: 36px;
     padding: 6px 0;
@@ -128,9 +132,13 @@ img, footer, .block {
     height: 100px;
 }
 
+.svgAnchor {
+    display: none;
+}
+
 nav {
     z-index: 2;
-    padding: 10px 0;
+    padding: 10px 0 0;
     text-align: center;
     position: fixed;
     background: rgba(34, 34, 34, 0.5);
@@ -144,6 +152,7 @@ nav {
 #navTitle {
     margin-left: 10px;
     font-size: 50px;
+    padding: 0 0 10px;
 }
 
 .navAnchor {
@@ -203,30 +212,32 @@ footer > .footerLink:hover > svg > g {
 }
 
 @media all and (max-width: 756px) {
-    #menu {
+    #menu, .svgAnchor {
         display: inline;
     }
 
-    .navAnchor {
-        font-size: 30px;
-        float: none;
-        text-align: right;
+    .navAnchor, .navText {
         display: block;      
+        font-size: 30px;
+        margin-right: 70px;
+        text-align: right;
+        padding: 15px 0;
     }
-
+    
+    .navAnchor {
+        float: none;
+    }
+    
     .navHide {
+        border-bottom: 2px solid purple;
         display: none;
     }
     
-    .navText {
-        display: block;
-        font-size: 30px;
-        padding: 15px 0;
-        margin-right: 70px;
-        text-align: right;
+    .navHide:first-of-type {
+        border-top: 2px solid purple;
     }
-
-    nav > .navHide > svg {
+    
+    nav > .navHide > svg{
         margin: 5px;
         float: right;
         clear: both;
@@ -264,9 +275,15 @@ footer > .footerLink:hover > svg > g {
 }
 
 @media all and (max-width: 512px) {
-    
     #navTitle {
         font-size: 36px;
-        padding: 7px 0;
+        padding: 12px 0;
+    }
+}
+
+@media all and (max-width: 359px) {
+    .techIcon {
+        width: 80px;
+        height: 80px;
     }
 }
