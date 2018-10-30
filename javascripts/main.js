@@ -88,12 +88,20 @@ const hideMenuOnClick = () => {
 
 //jquery to make links to anchors scroll
 const scrollToAnchor = anchor => {
+    let scrollMe = true;
     $('html').animate({
         scrollTop: $(anchor).offset().top
-    },500);
-    $('body').animate({
-        scrollTop: $(anchor).offset().top
-    },500);
+    },
+    {
+        start: () => {
+            scrollMe = false;
+        }
+    }, 500);
+    if (scrollMe) {
+        $('body').animate({
+            scrollTop: $(anchor).offset().top
+        }, 500);
+    }
 }
 
 navTransparent();
