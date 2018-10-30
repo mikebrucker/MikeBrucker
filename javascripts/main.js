@@ -47,10 +47,14 @@ const navTransparent = () => {
         nav.style.backgroundColor = "#222222";
     } 
     else {
-        if (menuHidden) {
-            nav.style.backgroundColor = "rgba(34, 34, 34, 0.4)";
+        if (window.innerWidth < 757) {
+            if (menuHidden) {
+                nav.style.backgroundColor = "rgba(34, 34, 34, 0.4)";
+            } else {
+                nav.style.backgroundColor = "rgba(34, 34, 34, 0.9)";
+            }
         } else {
-            nav.style.backgroundColor = "rgba(34, 34, 34, 0.9)";
+            nav.style.backgroundColor = "rgba(34, 34, 34, 0.4)";
         }
     }    
 }
