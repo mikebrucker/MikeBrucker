@@ -65,7 +65,7 @@ const mainHeightChange = () => {
     } else if (window.innerWidth > 641 && window.innerWidth < 1281) {
         mainElement.style.height = "1029px";
     } else {
-        mainElement.style.height = "514px";
+        mainElement.style.height = "inherit";
     }
 }
 

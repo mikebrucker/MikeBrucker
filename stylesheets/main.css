@@ -10,12 +10,38 @@ body {
 }
 
 main {
+    background: black;
     background-repeat: no-repeat;
     background-size: center;
     background-position: top;
     background-image: url("../images/philadelphia-640.jpg");
     padding: 70px 0 0;
     height: 514px;
+}
+
+h1 {
+    text-shadow: 0 0 50px crimson;
+    -webkit-text-stroke: 2px #333333;
+    font-weight: bolder;
+    padding: 50px 10px;
+}
+
+#hi {
+    font-size: 50px;
+}
+
+#intro {
+    font-size: 40px;
+}
+
+#profilePic {
+    margin: 0 auto;
+    background: #333333 url("../images/favicon/favicon-310.png");
+    width: 310px;
+    height: 310px;
+    border-radius: 1000px;
+    border: 4px solid crimson;
+    padding: 50px auto;
 }
 
 article {
@@ -29,11 +55,6 @@ article {
     height: 100%;
     z-index: 1;
     display: none;
-}
-
-h1 {
-    font-size: 50px;
-    padding: 10px 0;
 }
 
 a {
@@ -65,12 +86,12 @@ img {
     margin: 0 auto;
 }
 
-img, footer, .block {
-    display: block;
-}
-
 hr {
     margin: 30px auto;
+}
+
+img, footer, .block {
+    display: block;
 }
 
 .link, svg, .techIcon, #navTitle {
@@ -139,10 +160,6 @@ body, .link, .infoTitle, .infoContent > a, .navLink, #navTitle, #footerTitle {
     height: 100px;
 }
 
-.svgAnchor {
-    display: none;
-}
-
 nav {
     z-index: 2;
     padding: 10px 0 0;
@@ -164,8 +181,8 @@ nav {
 
 .navAnchor {
     font-size: 20px;
-    padding: 15px 0px;
-    margin: 0 5px;
+    padding: 15px 4px;
+    margin: 0 0 0 8px;
     float: right;
 }
 
@@ -178,9 +195,12 @@ nav {
     transition: 0.25s;
 }
 
+.svgLink {
+    margin: 0 5px;
+}
+
 nav svg {
     float: right;
-    margin: 0 5px;
     width: 50px;
     height: 50px;
     transform: fill;
@@ -215,6 +235,10 @@ footer > .footerLink:hover > svg > g {
 .anchor {
     position: relative;
     top: -80px;
+}
+
+.svgAnchor {
+    display: none;
 }
 
 @media all and (max-width: 756px) {
@@ -262,6 +286,18 @@ footer > .footerLink:hover > svg > g {
     }
 }
 
+@media all and (min-width: 920px) {
+    .svgAnchor {
+        display: inline-block;
+    }
+    #hi {
+        font-size: 60px;
+    }
+    #intro {
+        font-size: 50px;
+    }
+}
+
 @media all and (min-width: 641px) and (max-width: 1280px) {
     main {
         background-image: url("../images/philadelphia-1280.jpg");
@@ -275,11 +311,30 @@ footer > .footerLink:hover > svg > g {
         background-size: 100%;
     }
 }
+@media all and (min-width: 513px) and (max-width: 756px) {
+    h1 {
+        -webkit-text-stroke-width: 2px;
+    }
+    #hi {
+        font-size: 48px;
+    }
+    #intro {
+        font-size: 36px;
+    }
+}
 
 @media all and (max-width: 512px) {
     #navTitle {
-        font-size: 36px;
         padding: 7px 0 17px;
+    }
+    h1 {
+        -webkit-text-stroke-width: 1px;
+    }
+    #hi, #navTitle {
+        font-size: 36px;
+    }
+    #intro {
+        font-size: 30px;
     }
 }
 
