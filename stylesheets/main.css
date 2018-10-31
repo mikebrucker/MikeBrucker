@@ -4,7 +4,6 @@
 
 body {
     text-align: center;
-    color: #EEEEEE;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0;
     background: #222222;
@@ -49,7 +48,7 @@ a {
 }
 
 .link:hover {
-    background: purple;
+    background: crimson;
 }
 
 .link:active {
@@ -70,8 +69,8 @@ img, footer, .block {
     display: block;
 }
 
-.block {
-    height: 30px;
+hr {
+    margin: 30px auto;
 }
 
 .link, svg, .techIcon, #navTitle {
@@ -82,20 +81,20 @@ img, footer, .block {
     display: none;
 }
 
-.link, .infoTitle {
-    color: #00FF2D;
+body, .link, .infoTitle, .infoContent > a, .navLink, #navTitle, #footerTitle {
+    color: #EEEEEE;
 }
 
 .link, .infoBox {
     border-radius: 30px;
-    box-shadow: 0 0 30px #00FF2D;
-    border: 4px solid purple;
+    box-shadow: 0 0 50px darkgoldenrod;
+    border: 4px solid crimson;
 }
 
 .infoBox {
     margin: 40px auto;
     width: 736px;
-    background: linear-gradient(purple 48px, #EEEEEE 48px);
+    background: linear-gradient(crimson 48px, #EEEEEE 48px);
     padding: 0 30px 10px;
 }
 
@@ -114,6 +113,14 @@ img, footer, .block {
     line-height: 30px;
     text-align: left;
     color: #111111;
+}
+
+.infoContent > a {
+    background: crimson;
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 30px;
+    border: 2px solid crimson;
 }
 
 .projectTitle {
@@ -163,12 +170,11 @@ nav {
 }
 
 .navLink, #navTitle, #footerTitle {
-    color: #EEEEEE;
     transform: color;
 }
 
 .navLink:hover, #navTitle:hover, #footerTitle:hover {
-    color: purple;
+    color: crimson;
     transition: 0.25s;
 }
 
@@ -181,7 +187,7 @@ nav svg {
 }
 
 nav > .navLink:hover > svg > g {
-    fill: purple;
+    fill: crimson;
     transition: 0.25s;
 }
 
@@ -202,7 +208,7 @@ footer svg {
 }
 
 footer > .footerLink:hover > svg > g {
-    fill: purple;
+    fill: crimson;
     transition: 0.25s;
 }
 
@@ -229,12 +235,12 @@ footer > .footerLink:hover > svg > g {
     }
     
     .navHide {
-        border-bottom: 2px solid purple;
+        border-bottom: 2px solid crimson;
         display: none;
     }
     
     .navHide:first-of-type {
-        border-top: 2px solid purple;
+        border-top: 2px solid crimson;
     }
     
     nav > .navHide > svg{
