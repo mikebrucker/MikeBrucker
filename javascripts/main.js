@@ -1,6 +1,7 @@
 let nav = document.getElementById('nav'),
 mainElement = document.querySelector('main'),
 navHide = document.getElementsByClassName('navHide'),
+navTitle = document.getElementById('navTitle'),
 menu = document.getElementById('menu'),
 overlay = document.getElementById('overlay'),
 images = document.getElementsByTagName('img'),
@@ -10,6 +11,12 @@ window.onscroll = function () {
     "use strict";
     navTransparent();
 };
+
+navTitle.addEventListener('click', () => {
+    if (!menuHidden && window.innerWidth < 757) {
+        hideMenu();
+    }
+});
 
 menu.addEventListener('click', () => {
     hideMenu();
