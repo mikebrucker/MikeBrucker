@@ -20,7 +20,7 @@ main {
 }
 
 h1 {
-    text-shadow: 1px 1px 10px crimson, -1px 1px 10px crimson, 1px -1px 10px crimson, -1px -1px 10px crimson;
+    text-shadow: 1px 1px 10px rebeccapurple, -1px 1px 10px rebeccapurple, 1px -1px 10px rebeccapurple, -1px -1px 10px rebeccapurple;
     -webkit-text-stroke: 2px #333333;
     font-weight: bolder;
     padding: 50px 10px;
@@ -40,7 +40,7 @@ h1 {
     width: 310px;
     height: 310px;
     border-radius: 1000px;
-    border: 4px solid crimson;
+    border: 4px solid rebeccapurple;
     padding: 50px auto;
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 .link:hover {
-    background: crimson;
+    background: rebeccapurple;
 }
 
 .link:active {
@@ -103,18 +103,18 @@ img, footer, .block {
 }
 
 body, .link, .infoTitle, .infoContent > a, .navLink, #navTitle, #footerTitle {
-    color: #EEEEEE;
+    color: #00FF2D;
 }
 
 .link, .infoBox {
     border-radius: 30px;
-    box-shadow: 0 0 30px maroon;
-    border: 4px solid crimson;
+    box-shadow: 0 0 30px indigo;
+    border: 4px solid rebeccapurple;
 }
 
 .infoBox {
     width: 736px;
-    background: linear-gradient(crimson 48px, #EEEEEE 48px);
+    background: linear-gradient(rebeccapurple 48px, #EEEEEE 48px);
     padding: 0 0px 10px;
     margin: 0 auto;
     overflow: hidden;
@@ -139,18 +139,20 @@ body, .link, .infoTitle, .infoContent > a, .navLink, #navTitle, #footerTitle {
 }
 
 .infoContent > a {
-    background: crimson;
+    background: rebeccapurple;
     font-weight: bold;
     padding: 0 6px;
     border-radius: 30px;
-    border: 2px solid crimson;
+    border: 2px solid rebeccapurple;
 }
 
 .projectTitle {
     font-weight: bold;
     font-size: 30px;
-    color: maroon;
+    color: indigo;
     text-decoration: underline;
+    text-shadow: 1px 1px 2px #00FF2D, -1px 1px 2px #00FF2D, 1px -1px 2px #00FF2D, -1px -1px 2px #00FF2D;
+
 }
 
 .projectImage {
@@ -168,7 +170,7 @@ nav {
     padding: 10px 0 0;
     text-align: left;
     position: fixed;
-    background: rgba(34, 34, 34, 0.5);
+    background: rgba(34, 34, 34, 0.4);
     width: 100%;
     top: 0;
     left: 0;
@@ -194,7 +196,7 @@ nav {
 }
 
 .navLink:hover, #navTitle:hover, #footerTitle:hover {
-    color: crimson;
+    color: rebeccapurple;
     transition: 0.25s;
 }
 
@@ -210,7 +212,7 @@ nav svg {
 }
 
 nav > .navLink:hover > svg > g {
-    fill: crimson;
+    fill: rebeccapurple;
     transition: 0.25s;
 }
 
@@ -231,7 +233,7 @@ footer svg {
 }
 
 footer > .footerLink:hover > svg > g {
-    fill: crimson;
+    fill: rebeccapurple;
     transition: 0.25s;
 }
 
@@ -262,12 +264,12 @@ footer > .footerLink:hover > svg > g {
     }
     
     .navHide {
-        border-bottom: 2px solid crimson;
+        border-bottom: 2px solid rebeccapurple;
         display: none;
     }
     
     .navHide:first-of-type {
-        border-top: 2px solid crimson;
+        border-top: 2px solid rebeccapurple;
     }
     
     nav > .navHide > svg{

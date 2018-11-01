@@ -50,7 +50,7 @@ for (let img of images) {
 }
 
 const navTransparent = () => {
-    if (document.scrollingElement.scrollTop >= 70 ) {
+    if (document.scrollingElement.scrollTop >= 600 ) {
         nav.style.backgroundColor = "#222222";
     } 
     else {
