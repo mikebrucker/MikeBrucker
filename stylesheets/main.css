@@ -149,9 +149,9 @@ body, .link, .infoTitle, .infoContent > a, .navLink, #navTitle, #footerTitle {
 
 .projectTitle {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     color: #111111;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-shadow: 1px 1px 2px crimson, -1px 1px 2px crimson, 1px -1px 2px crimson, -1px -1px 2px crimson;
 }
 
@@ -287,7 +287,7 @@ footer > .footerLink:hover > svg > g {
     }
 
     .projectImage {
-        width: 100%;
+        width: 90%;
     }
 
     nav {
@@ -321,9 +321,6 @@ footer > .footerLink:hover > svg > g {
     }
 }
 @media all and (min-width: 513px) and (max-width: 756px) {
-    h1 {
-        -webkit-text-stroke-width: 2px;
-    }
     #hi {
         font-size: 48px;
     }
@@ -335,9 +332,6 @@ footer > .footerLink:hover > svg > g {
 @media all and (max-width: 512px) {
     #navTitle {
         padding: 7px 0 17px;
-    }
-    h1 {
-        -webkit-text-stroke-width: 1px;
     }
     #hi, #navTitle {
         font-size: 36px;
